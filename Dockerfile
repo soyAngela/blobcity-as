@@ -5,13 +5,13 @@ RUN apt update
 RUN apt -y install python3
 
 #Crear un directorio
-WORKDIR /data
+WORKDIR /datosCliente
 
 #Añadir el script de python al directorio
-COPY ./aplicacion-cliente.py /data
+COPY ./aplicacion-cliente.py /datosCliente
 
 #Descargar las librerias necesarias
-RUN pip3 -y install 
+RUN pip3 install requests
 
 #Ejecutar el script
 CMD python3 aplicacion-cliente.py

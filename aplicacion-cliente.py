@@ -1,7 +1,3 @@
-'''
-https://docs.db.blobcity.com/docs/inserting-data
-
-'''
 import requests
 
 url = 'http://localhost:10111/rest/bquery'
@@ -25,4 +21,6 @@ print(response.headers)
 print(response.text)
 
 with open('./log_blobcity.txt','w') as f:
-  f.write(response)
+  f.write(str(response))
+  f.write('\n')
+  f.write(str(response.text))

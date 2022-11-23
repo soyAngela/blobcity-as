@@ -1,9 +1,11 @@
 services:
   blobcity:
     image: blobcity/db
+    container_name: blobcitydb-container
     ports:
       - 10111:10111
       - 10113:10113
   cliente:
     build: .
+    container_name: python_client_container
     
