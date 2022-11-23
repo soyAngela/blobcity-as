@@ -11,7 +11,7 @@ WORKDIR /data
 COPY ./aplicacion-cliente.py /data
 
 #Descargar las librerias necesarias
-RUN pip3 install 
+RUN pip3 -y install 
 
 #Ejecutar el script
 CMD python3 aplicacion-cliente.py

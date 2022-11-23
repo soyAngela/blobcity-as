@@ -23,3 +23,6 @@ response = requests.post(url=url, json=payload, headers=headers)
 print(response)
 print(response.headers)
 print(response.text)
+
+with open('./log_blobcity.txt','w') as f:
+  f.write(response)
