@@ -4,7 +4,7 @@ https://docs.db.blobcity.com/docs/inserting-data
 '''
 import requests
 
-url = 'http://35.195.125.149:10111/rest/bquery'
+url = 'http://localhost:10111/rest/bquery'
 
 #Create datastore request
 payload = {

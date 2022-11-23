@@ -2,8 +2,8 @@ services:
   blobcity:
     image: blobcity/db
     ports:
-      -"10111:10111"
-      -"10113:10113"
+      - 10111:10111
+      - 10113:10113
   cliente:
     build: .
     
