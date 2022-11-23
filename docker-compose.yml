@@ -1,0 +1,6 @@
+services:
+  blobcity:
+    image: blobcity/db
+  cliente:
+    build: .
+    
