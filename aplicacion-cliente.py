@@ -8,7 +8,7 @@ while True:
   mensaje = input("Introduce el dato que quieres guardar en la bd: ")
   
 
-  url = 'http://35.195.125.149:10111/rest/bquery'
+  url = 'http://localhost:10111/rest/bquery'
 
   #Create datastore request
   datos = {
@@ -18,7 +18,7 @@ while True:
     "ds" : "prueba",
     "c" : "coleccion",
     "q" : "insert",
-    "p" : { "data" : ["JSON", {
+    "p" : { "data" : [{
         "nombre": nombre,
         "mensaje": mensaje }] },
     
