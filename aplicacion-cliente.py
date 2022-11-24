@@ -28,7 +28,7 @@ while True:
     'Content-Type': 'application/json',
     }
 
-  response = requests.post(url=url, json=datos, headers=headers)
+  response = requests.post(url=url, json=urllib.parse.urlencode(datos), headers=headers)
 
   with open('./log_blobcity.txt','a') as f:
     f.write(str(response))
