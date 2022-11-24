@@ -1,7 +1,7 @@
 services:
   blobcity:
     image: blobcity/db
-    container_name: blobcitydb-container
+    container_name: blobcity-db-container
     ports:
       - 10111:10111
       - 10113:10113
