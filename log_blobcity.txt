@@ -1,0 +1,30 @@
+<Response [200]>
+{"ack":"0", "cause":"Invalid query format"}
+b'{"ack":"0", "cause":"Invalid query format"}'
+b'{"key": "BC.9f8e21f3e73e4751ac5582b5edb52548e1cd029d26554c6eb5ec70b31f67e2fc", "username": "root", "password": "root", "ds": "prueba", "c": "coleccion", "q": "insert", "p": {"data": [{"nombre": "aaa", "mensaje": "asdfg"}]}}'
+
+<Response [200]>
+{"ack":"0", "cause":"Invalid query format"}
+b'{"ack":"0", "cause":"Invalid query format"}'
+b'{"username": "root", "password": "root", "ds": "prueba", "c": "coleccion", "q": "insert", "p": {"data": [{"nombre": "ee", "mensaje": "tr"}]}}'
+
+<Response [200]>
+{"ack":"0", "cause":"Invalid query format"}
+b'{"ack":"0", "cause":"Invalid query format"}'
+b'{"username": "root", "password": "root", "ds": "prueba", "c": "coleccion", "q": "insert", "p": {"data": [{"nombre": "Pepe", "mensaje": "El romano"}]}}'
+
+<Response [200]>
+{"ack":"0", "cause":"Invalid query format"}
+b'{"ack":"0", "cause":"Invalid query format"}'
+b'{"key": "BC.9f8e21f3e73e4751ac5582b5edb52548e1cd029d26554c6eb5ec70b31f67e2fc", "username": "root", "password": "root", "ds": "prueba", "c": "coleccion", "q": "insert", "p": {"data": [{"nombre": "Hola", "mensaje": "Holita"}]}}'
+
+<Response [204]>
+
+b''
+b'"key=BC.9f8e21f3e73e4751ac5582b5edb52548e1cd029d26554c6eb5ec70b31f67e2fc&username=root&password=root&ds=prueba&c=coleccion&q=insert&p=%7B%27data%27%3A+%5B%7B%27nombre%27%3A+%27Aloha%27%2C+%27mensaje%27%3A+%27jncj%27%7D%5D%7D"'
+
+<Response [500]>
+
+b''
+b'"username=root&password=root&ds=prueba&c=coleccion&q=insert&p=%7B%27data%27%3A+%5B%7B%27nombre%27%3A+%27Helo%27%2C+%27mensaje%27%3A+%27Goodbye%27%7D%5D%7D"'
+

@@ -6,8 +6,10 @@ services:
       - 10111:10111
       - 10113:10113
     volumes:
-      - ~/blobcitydb/data_blobcity:/data
+      - blob-vol:/data
   cliente:
     build: .
-    container_name: python_client_container
+    container_name: blob_client_container
+volumes:
+  blob-vol:
     
