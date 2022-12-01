@@ -1,4 +1,0 @@
-root
-root
-create-ds registro
-create-collection registro.visitas

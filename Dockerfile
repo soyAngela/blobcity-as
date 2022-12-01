@@ -4,10 +4,12 @@ FROM ubuntu:22.04
 WORKDIR /datosCliente
 
 #Añadir el script de al directorio
-COPY ./cliente-blobcitydb.txt /datosCliente
+COPY ./comandos-blobcity.txt /datosCliente
+COPY ./cliente-blobcitydb.sh /datosCliente
 
 #Instalar netcat
-RUN apt install nc
+RUN apt update
+RUN apt -y install netcat
 
 #Ejecutar el script
-CMD nc localhost 10113 < cliente-blobcitydb.txt
+CMD ./cliente-blobcitydb.sh
