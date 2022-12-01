@@ -6,5 +6,8 @@ WORKDIR /datosCliente
 #Añadir el script de al directorio
 COPY ./cliente-blobcitydb.txt /datosCliente
 
+#Instalar netcat
+RUN apt install nc
+
 #Ejecutar el script
 CMD nc localhost 10113 < cliente-blobcitydb.txt
