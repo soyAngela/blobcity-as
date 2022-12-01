@@ -4,8 +4,11 @@ FROM ubuntu:22.04
 WORKDIR /datosCliente
 
 #Añadir el script de al directorio
-COPY ./comandos-blobcity.txt /datosCliente
+COPY ./comandos-blobcitydb.txt /datosCliente
 COPY ./cliente-blobcitydb.sh /datosCliente
+
+#Dar los permisos necesarios
+RUN chmod +x cliente-blobcitydb.sh
 
 #Instalar netcat
 RUN apt update
