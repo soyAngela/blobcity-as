@@ -3,7 +3,7 @@ FROM ubuntu:22.04
 #Crear un directorio
 WORKDIR /datosCliente
 
-#Añadir el script de al directorio
+#Añadir los scripts al directorio
 COPY ./comandos-blobcitydb.txt /datosCliente
 COPY ./cliente-blobcitydb.sh /datosCliente
 
