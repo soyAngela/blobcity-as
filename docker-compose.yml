@@ -5,7 +5,11 @@ services:
     ports:
       - 10111:10111
       - 10113:10113
+    volumes:
+      - blob-vol:/data
   cliente:
     image: soyangela/blobcity-db-client
     container_name: blob_client_container
+volumes:
+  blob-vol:
     
