@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cliente-blobcity-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: blobcitydb
+  template:
+    metadata:
+      labels:
+        component: blobcitydb
+    spec:
+      containers:
+        - name: cliente-blobcitydb-container
+          image: soyangela/blobcity-db-client
+          ports:
+            - containerPort: 10113

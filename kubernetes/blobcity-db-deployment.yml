@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blobcity-db-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: blobcitydb
+  template:
+    metadata:
+      labels:
+        component: blobcitydb
+    spec:
+      containers:
+        - name: blobcity-db-container
+          image: blobcity/db
+          ports:
+            - containerPort: 10113
